@@ -39,5 +39,5 @@ while True:
                     src1 = req1.text
                     soup1 = BeautifulSoup(src1, "html.parser")
                     ps = soup1.find_all('p')
-                    print("Цена:", ps[0].text[1:])
+                    print("\tЦена:", ps[0].text[1:])
                     print("\tОписание:", ps[3].text, end="\n\n")
